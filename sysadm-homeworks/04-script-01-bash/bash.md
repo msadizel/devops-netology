@@ -52,8 +52,9 @@ do
 	if (($? != 0))
 	then
 		date >> curl.log
-    else exit 0
-	fi
+    else 
+        exit 0
+    fi
     sleep 5
 done
 ```
