@@ -215,7 +215,7 @@ docker stop postgres
 Приведите список операций, который вы применяли для бэкапа данных и восстановления. 
 ```
 docker-compose up -d
-docker exec -it postgres /bin/bash
+docker exec -it postgres-2 /bin/bash
 cd backup/
 psql -d test_db -U admin -f roles.sql
 psql -U admin test_db < test_db.sql
